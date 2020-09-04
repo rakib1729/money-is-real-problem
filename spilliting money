@@ -1,0 +1,51 @@
+TK=int(input("Enter your TK"))
+def spilliting_money(n):
+    if n>=500:
+        a=int(n/500)
+        b=int(n%500)
+        print("500 TK =", a ,"note")
+        n=b
+        spilliting_money(n)
+    elif n<500 and n>=100:
+        a = int(n / 100)
+        b = int(n % 100)
+        print("100 TK =", a, "note")
+        n = b
+        spilliting_money(n)
+
+    elif n < 100 and n >= 50:
+        a = int(n / 50)
+        b = int(n % 50)
+        print("50 TK =",a, "note")
+        n = b
+        spilliting_money(n)
+    elif n < 50 and n >= 20:
+        a = int(n / 20)
+        b = int(n % 20)
+        print("20 TK =",a ,"note")
+        n = b
+        spilliting_money(n)
+    elif n < 20 and n >= 10:
+        a = int(n / 10)
+        b = int(n % 10)
+        print("10 TK =",a ,"note")
+        n = b
+        spilliting_money(n)
+    elif n < 10 and n >= 5:
+        a = int(n / 5)
+        b = int(n % 5)
+        print("5 TK =",a ,"note")
+        n = b
+        spilliting_money(n)
+    elif n < 5 and n >= 2:
+        a = int(n / 2)
+        b = int(n % 2)
+        print("2 TK =",a ,"note")
+        n = b
+        spilliting_money(n)
+    elif n < 2 and n >= 1:
+        a = int(n / 1)
+        b = int(n % 1)
+        print("1 TK =",a, "note")
+
+spilliting_money(TK)
